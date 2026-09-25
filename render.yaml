@@ -1,0 +1,61 @@
+services:
+  - type: web
+    name: buglens-api
+    runtime: node
+    plan: free
+
+    rootDir: server
+
+    buildCommand: npm ci
+    startCommand: npm start
+
+    healthCheckPath: /api/health
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: JWT_EXPIRES_IN
+        value: 7d
+
+      - key: AUTH_COOKIE_NAME
+        value: __Host-buglens_session
+
+      - key: COOKIE_SECURE
+        value: "true"
+
+      - key: COOKIE_SAME_SITE
+        value: lax
+
+      - key: AI_PROVIDER
+        value: groq
+
+      - key: GROQ_MODEL
+        value: qwen/qwen3.8-27b
+
+      - key: JWT_SECRET
+        generateValue: true
+
+      - key: ENCRYPTION_KEY
+        generateValue: true
+
+      - key: MONGO_URI
+        sync: false
+
+      - key: CLIENT_URL
+        sync: false
+
+      - key: GROQ_API_KEY
+        sync: false
+
+      - key: MAIL_USER
+        sync: false
+
+      - key: MAIL_PASSWORD
+        sync: false
+
+      - key: MAIL_FROM
+        sync: false
+
+      - key: RESET_PASSWORD_URL
+        sync: false
