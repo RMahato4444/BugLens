@@ -40,7 +40,7 @@ function AnalyzerActions({
         type="button"
         onClick={onAnalyze}
         disabled={isAnalyzing}
-        className={`group relative ml-auto inline-flex min-w-[180px] shrink-0 items-center justify-center gap-2.5 overflow-hidden rounded-xl px-5 py-2.5 text-sm font-bold text-white transition-all duration-200 active:scale-[0.98] sm:min-w-[205px] ${isAnalyzing ? "cursor-wait bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-90 shadow-lg shadow-blue-600/25" : hasInput ? "bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 shadow-lg shadow-blue-600/25 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-600/30" : "bg-slate-300 text-slate-600 shadow-none hover:bg-slate-400 dark:bg-slate-700 dark:text-slate-300 dark:hover:bg-slate-600"}`}
+        className={`group relative w-full sm:ml-auto sm:w-auto inline-flex  min-w-[180px] shrink-0 items-center justify-center gap-2.5 overflow-hidden rounded-xl px-5 py-2.5 text-sm font-bold text-white transition-all duration-200 active:scale-[0.98] sm:min-w-[205px] ${isAnalyzing ? "cursor-wait bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-90 shadow-lg shadow-blue-600/25" : hasInput ? "bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 shadow-lg shadow-blue-600/25 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-600/30" : "bg-slate-300 text-slate-600 shadow-none hover:bg-slate-400 dark:bg-slate-700 dark:text-slate-300 dark:hover:bg-slate-600"}`}
       >
         <span className="pointer-events-none absolute inset-y-0 left-[-35%] w-1/3 -skew-x-12 bg-white/20 blur-md transition-transform duration-700 group-hover:left-[115%]" />
         {isAnalyzing ? (
