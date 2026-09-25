@@ -33,7 +33,7 @@ export function WorkspaceHeader({ mode }) {
 
   return (
     <div className="flex justify-center px-4 py-5 sm:px-6 sm:py-6">
-      <div className="glass blue-glow relative w-full max-w-md overflow-hidden rounded-full border border-black/10 bg-white/55 px-6 py-3 text-center shadow-xl shadow-blue-500/10 backdrop-blur-2xl ring-1 ring-white/20 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-2xl dark:border-white/10 dark:bg-slate-900/55 dark:ring-white/5">
+      <div className="glass blue-glow relative w-full max-w-md overflow-hidden rounded-full border border-black/10 bg-white/78 px-6 py-3 text-center shadow-xl shadow-blue-500/10 backdrop-blur-2xl ring-1 ring-white/20 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-2xl dark:border-white/10 dark:bg-slate-900/78 dark:ring-white/5">
         <div className="pointer-events-none absolute -left-10 -top-10 h-20 w-20 rounded-full bg-blue-500/10 blur-2xl dark:bg-blue-400/15" />
         <div className="pointer-events-none absolute -bottom-10 -right-10 h-20 w-20 rounded-full bg-cyan-400/10 blur-2xl dark:bg-cyan-300/10" />
         <div className="relative flex items-center justify-center gap-3">

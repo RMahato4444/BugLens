@@ -5,7 +5,7 @@ function AnalyzerBenefits() {
   return (
     <div id="buglens-what-you-get">
       <div className="mb-5 flex justify-center">
-        <div className="glass relative overflow-hidden rounded-2xl border border-blue-500/10 bg-gradient-to-r from-blue-500/10 via-indigo-500/5 to-cyan-500/10 px-4 py-2.5 shadow-lg shadow-blue-500/5 backdrop-blur-xl ring-1 ring-white/20 dark:border-white/10 dark:bg-slate-900/45 dark:ring-white/5">
+        <div className="glass relative overflow-hidden rounded-2xl border border-blue-500/10 bg-gradient-to-r from-blue-500/10 via-indigo-500/5 to-cyan-500/10 px-4 py-2.5 shadow-lg shadow-blue-500/5 backdrop-blur-xl ring-1 ring-white/20 dark:border-white/10 dark:bg-slate-900/70 dark:ring-white/5">
           <div className="pointer-events-none absolute -left-6 -top-6 h-12 w-12 rounded-full bg-blue-400/15 blur-xl dark:bg-blue-300/10" />
           <div className="pointer-events-none absolute -bottom-6 -right-6 h-12 w-12 rounded-full bg-cyan-400/15 blur-xl dark:bg-cyan-300/10" />
           <div className="relative flex items-center justify-center gap-2.5">

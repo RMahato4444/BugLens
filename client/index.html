@@ -18,6 +18,34 @@
       content="#2563eb"
     />
 
+    <script>
+      (() => {
+        try {
+          const key = "buglens-theme";
+          const savedTheme =
+            localStorage.getItem(key) || "system";
+
+          const prefersDark =
+            window.matchMedia &&
+            window.matchMedia(
+              "(prefers-color-scheme: dark)",
+            ).matches;
+
+          const isDark =
+            savedTheme === "dark" ||
+            (savedTheme === "system" && prefersDark);
+
+          if (isDark) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.add("light");
+          }
+        } catch {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+
     <title>BugLens</title>
   </head>
 
