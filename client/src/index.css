@@ -14,7 +14,7 @@
 
   --bg: #f8fafc;
 
-  --surface: rgba(255, 255, 255, 0.95);
+  --surface: rgba(255, 255, 255, 0.78);
   --surface-solid: #ffffff;
   --surface-muted: #f1f5f9;
 
@@ -31,7 +31,7 @@
   --shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
 
   /* Navbar */
-  --nav-bg: rgba(255, 255, 255, 0.76);
+  --nav-bg: rgba(255, 255, 255, 0.58);
   --nav-border: rgba(255, 255, 255, 0.72);
 
   --nav-text: rgba(15, 23, 42, 0.62);
@@ -46,7 +46,7 @@ html.dark {
 
   --bg: #020617;
 
-  --surface: rgba(7, 14, 29, 0.94);
+  --surface: rgba(7, 14, 29, 0.72);
   --surface-solid: #0b1220;
   --surface-muted: #0f172a;
 
@@ -63,7 +63,7 @@ html.dark {
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
 
   /* Navbar */
-  --nav-bg: rgba(8, 14, 28, 0.92);
+  --nav-bg: rgba(8, 14, 28, 0.68);
   --nav-border: rgba(255, 255, 255, 0.14);
 
   --nav-text: rgba(226, 232, 240, 0.7);
