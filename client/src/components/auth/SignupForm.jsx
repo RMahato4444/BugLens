@@ -110,22 +110,14 @@ function SignupForm({
 
       try {
         await register({
-          name:
-            name.trim(),
-
-          email:
-            email.trim(),
-
+          name: name.trim(),
+          email: email.trim(),
           password,
-
-          agreeToTerms:
-            agree,
+          agreeToTerms: agree,
         });
 
         onSuccess?.();
-      } catch (
-        requestError
-      ) {
+      } catch (requestError) {
         setError(
           requestError.message ||
             "Unable to create your account.",
@@ -187,16 +179,7 @@ function SignupForm({
         placeholder="At least 8 characters"
       />
 
-      <div className="flex items-center gap-2 text-xs text-[var(--text-muted)]">
-        <Check
-          size={13}
-          className={
-            password.length >= 8
-              ? "text-emerald-500"
-              : ""
-          }
-        />
-
+      <div className="text-xs text-[var(--text-muted)]">
         Use at least 8 characters.
       </div>
 
@@ -226,22 +209,16 @@ function SignupForm({
         <input
           type="checkbox"
           checked={agree}
-          onChange={(
-            event,
-          ) =>
+          onChange={(event) =>
             setAgree(
-              event.target
-                .checked,
+              event.target.checked,
             )
           }
           className="mt-0.5 h-4 w-4 rounded border-slate-300 accent-blue-600"
         />
 
         <span className="text-xs leading-5 text-[var(--text-secondary)]">
-          I agree to the
-          BugLens terms of
-          service and privacy
-          policy.
+          I agree to the BugLens terms of service and privacy policy.
         </span>
       </label>
 
@@ -252,15 +229,11 @@ function SignupForm({
       )}
 
       <button
-        disabled={
-          isSubmitting
-        }
+        disabled={isSubmitting}
         type="submit"
         className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
       >
-        <Sparkles
-          size={17}
-        />
+        <Sparkles size={17} />
 
         {isSubmitting
           ? "Creating account..."
