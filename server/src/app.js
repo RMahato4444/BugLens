@@ -10,6 +10,7 @@ import healthRoutes from "./routes/health.routes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 
 const app = express();
+app.set("trust proxy", 1);
 const allowedOrigins = env.clientUrl
   .split(",")
   .map((value) => value.trim())

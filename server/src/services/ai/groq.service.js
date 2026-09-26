@@ -51,7 +51,7 @@ async function requestWithStructuredOutput(client, messages) {
     model: env.groqModel,
     messages,
     temperature: 0.2,
-    max_completion_tokens: 4096,
+    max_completion_tokens: 800,
     reasoning_effort: "none",
     response_format: {
       type: "json_schema",
@@ -69,7 +69,7 @@ async function requestWithJsonObject(client, messages) {
     model: env.groqModel,
     messages,
     temperature: 0.2,
-    max_completion_tokens: 4096,
+    max_completion_tokens: 800,
     reasoning_effort: "none",
     response_format: { type: "json_object" },
   });

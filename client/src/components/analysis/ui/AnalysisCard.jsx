@@ -21,7 +21,7 @@ function AnalysisCard({
                 overflow-hidden
                 rounded-2xl
                 border
-                border-[var(--border)]
+                border-(--border)
                 shadow-sm"
     >
       <div
